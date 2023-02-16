@@ -1,0 +1,58 @@
+.about-us {
+  padding: 100px 30px;
+  background-color: #fff;
+
+  .about-us--sub {
+    .about-us--content {
+      .upper--content {
+        padding-bottom: 20px;
+        width: auto;
+        margin: 0 auto;
+      }
+
+      .lower--content {
+        padding: 20px;
+
+        .column-i {
+          position: relative;
+          margin: 0 10px;
+          .about-us-img {
+            margin: 0 8px;
+            height: 200px;
+            // opacity: 1;
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: 0.5s ease;
+            backface-visibility: hidden;
+
+            &:hover {
+              opacity: 0.3;
+            }
+          }
+
+          .hover {
+            transition: 0.5s ease;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            text-align: center;
+
+            &:hover {
+              opacity: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .about-us-img {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700;800;900&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+$primary-font: "Roboto", sans-serif;
+$secondary-font: "Montserrat", sans-serif;
+$third-font: "Kaushan Script", cursive;
+$gradient-color: linear-gradient(to bottom, #e88282, #f1d98a);
+
+//GLOBAL
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primary-font;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main--title {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.main--p {
+  font-family: $primary-font;
+  font-size: calc(max(1vw, 0.9rem));
+  color: #999999;
+}
+
+.upper--title {
+  font-family: $third-font;
+  font-size: 1.8rem;
+}
+
+.line--red {
+  width: 70px;
+  margin: 50px auto;
+  text-align: center;
+  border-bottom: 3px solid #f38181;
+}
+
+.line--reds {
+  border: 2px solid #f38181;
+  height: 1px;
+  width: 50px;
+  margin: 15px 10px;
+  background-color: #f38181;
+}
+
+//HEADER
+@import "./navbar";
+
+//HERO
+@import "./hero";
+
+//ABOUT US
+@import "./about-us";
+
+//COUNTER
+@import "./counter";
+
+//SERVICES
+@import "./services";
+
+//DEVICES
+@import "./devices";
+
+//WHAT WE DO
+@import "./what-we-do";
+
+//TESTIMONIALS
+@import "./testimonials";
+
+//TEAM
+@import "./team";
+
+//LOGO
+@import "./logo";
+
+//WORKS
+@import "./works";
+
+//TESTIMONIALS 2
+@import "./testimonials-2";
+
+//CLIENTS
+@import "./clients";
+
+//BLOG
+@import "./blog";
+
+//MAP
+@import "./map";
+
+//FOOTER
+@import "./footer";

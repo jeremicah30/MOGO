@@ -1,0 +1,35 @@
+.testimonials {
+  background-color: #f8f8f8;
+  padding: 50px;
+
+  .test--inner {
+    width: 80%;
+    margin: auto;
+
+    img {
+      padding: 20px;
+    }
+
+    .test--content {
+      padding: 20px;
+
+      p {
+        font-family: $primary-font;
+        font-size: calc(max(1.5vw, 1rem));
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      h2 {
+        font-family: $third-font;
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .test--img {
+    display: none;
+  }
+}

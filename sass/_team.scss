@@ -1,0 +1,52 @@
+.team {
+  padding: 100px 0;
+
+  .upper--content {
+    padding: 0 50px;
+  }
+
+  &--main {
+    padding: 20px 0;
+
+    .team--container {
+      position: relative;
+      width: auto;
+      margin: auto;
+      padding: 40px 0;
+
+      .team--img {
+        max-width: 400px;
+        img {
+          width: 100%;
+          height: 450px;
+          object-fit: cover;
+          padding: 10px 0;
+        }
+      }
+
+      h1 {
+        font-family: $secondary-font;
+        font-size: 14px;
+        font-weight: 700;
+      }
+
+      h3 {
+        font-family: $primary-font;
+        font-size: 15px;
+        font-style: italic;
+        color: #999;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .team {
+    .team--main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

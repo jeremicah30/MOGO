@@ -1,0 +1,47 @@
+.devices {
+  padding-top: 100px;
+  background-image: url("../img/devices.png");
+  background-color: #d9d9d9;
+  background-blend-mode: overlay;
+  background-position: center;
+  background-size: cover;
+
+  &--cp {
+    position: absolute;
+    width: auto;
+    margin-top: -380px;
+    margin-left: 680px;
+    z-index: 9;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .devices--tablet {
+    width: auto;
+
+    img {
+      width: 400px;
+    }
+  }
+  .devices--cp {
+    position: absolute;
+    width: auto;
+    margin-top: -250px;
+    margin-left: 250px;
+    z-index: 9;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .devices--tablet {
+    display: none;
+  }
+
+  .devices--cp {
+    display: none;
+  }
+}

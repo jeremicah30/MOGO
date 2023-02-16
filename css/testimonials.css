@@ -1,0 +1,11 @@
+.testimonials {
+  background-color: #f8f8f8;
+  padding: 50px;
+}
+
+.testimonials .test--inner {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+/*# sourceMappingURL=testimonials.css.map */

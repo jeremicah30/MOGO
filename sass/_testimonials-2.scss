@@ -1,0 +1,36 @@
+.testimonials-2 {
+  background-color: #f8f8f8;
+  padding: 50px;
+
+  .test--inner2 {
+    width: 80%;
+
+    margin: auto;
+
+    .test--img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+    }
+
+    .test--content2 {
+      padding: 20px;
+
+      p {
+        font-family: $primary-font;
+        font-size: 1.2rem;
+        font-weight: 300;
+        font-style: italic;
+      }
+
+      h2 {
+        font-family: $third-font;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+    filter: invert(100%);
+  }
+}

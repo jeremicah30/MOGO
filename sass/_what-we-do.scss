@@ -1,0 +1,46 @@
+.we-do {
+  padding: 100px 0;
+
+  &--title {
+    padding: 50px;
+  }
+
+  &--img {
+    width: 500px;
+
+    .img--wedo {
+      width: 100%;
+    }
+  }
+
+  &--accordion {
+    .accordion-button {
+      padding: 9px !important;
+    }
+
+    .accordion-body {
+      padding: 10px 20px;
+    }
+    span {
+      font-family: $secondary-font;
+      font-size: 0.8rem;
+      color: #000;
+    }
+    .acc-content {
+      p {
+        font-family: $primary-font;
+        font-size: 0.9rem;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .we-do--accordion {
+    padding: 20px;
+    width: 100%;
+  }
+}

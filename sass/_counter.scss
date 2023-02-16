@@ -1,0 +1,46 @@
+.counter {
+  width: 100%;
+  background-color: #95e1d3;
+  color: #fff;
+
+  &--main {
+    width: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+
+    .counts {
+      border-left: 1px solid #b5eae0;
+      padding: 60px 0;
+
+      h1 {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: 3rem;
+      }
+
+      span {
+        font-family: $secondary-font;
+        font-size: 0.8rem;
+      }
+    }
+    .c-last {
+      border-right: 1px solid #b5eae0;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .counter--main {
+    display: flex;
+    flex-direction: column;
+
+    .counts {
+      border: none;
+      border-top: 1px solid #b5eae0;
+    }
+  }
+}

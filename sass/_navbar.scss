@@ -1,0 +1,77 @@
+.header {
+  .header--sub {
+    position: absolute;
+    padding: 20px 0;
+
+    .logo {
+      padding: 5px;
+      background-color: transparent;
+
+      a {
+        font-family: $secondary-font;
+        font-weight: 700;
+        font-size: calc(max(3vw, 40px));
+
+        &:hover {
+          color: #fce38a;
+        }
+      }
+    }
+    .navbar {
+      .navbar-toggler {
+        color: pink;
+      }
+
+      .link--nav {
+        font-family: $secondary-font;
+        font-size: 1rem;
+        color: #fff;
+        margin: 0 5px;
+
+        &:hover {
+          color: #fce38a;
+          border: none;
+          border-bottom: 2px solid #fce38a;
+        }
+      }
+    }
+  }
+}
+
+//IPAD and TABLET
+
+@media only screen and (max-width: 768px) {
+  .header--sub {
+    padding: 50px;
+    position: absolute;
+    .nav--main {
+      padding: 0 50px;
+      display: flex;
+      justify-content: flex-end;
+
+      .collapse {
+        background-color: black;
+      }
+    }
+
+    .hero--img {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .header--sub {
+    padding: 50px;
+    position: absolute;
+    .nav--main {
+      padding: 0 50px;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .hero--img {
+      display: none;
+    }
+  }
+}
